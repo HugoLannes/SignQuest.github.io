@@ -9,7 +9,7 @@ function displayDebugInfo(message) {
     const debugContainer = document.getElementById('debug');
     if (debugContainer) {
         debugContainer.innerText += message + '\n';  // Set the debug message
-    }f
+    }
 }
 //#endregion DEBUG
 
