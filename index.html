@@ -3,20 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MapillaryJS Demo</title>
-    <link rel="stylesheet" href="style.css">
-    
-    <!-- MapillaryJS CSS from CDN -->
-    <link href="https://unpkg.com/mapillary-js@4.1.2/dist/mapillary.css" rel="stylesheet">
+    <title>Static Mapillary Image</title>
+    <style>
+        #image-container {
+            width: 100%;
+            height: auto;
+            max-width: 800px;
+            border: 2px solid #ccc;
+        }
+        img {
+            width: 100%;
+            height: auto;
+        }#debug-screen {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+        }
+    </style>
 </head>
 <body>
-    <h1>MapillaryJS Demo</h1>
-    
-    <!-- Container where MapillaryJS will display the imagery -->
-    <div id="mly" style="width: 800px; height: 500px;"></div>
+    <h1>Static Mapillary Image</h1>
 
-    <!-- JavaScript for MapillaryJS -->
-    <script src="https://unpkg.com/mapillary-js@4.1.2/dist/mapillary.js"></script>
+    <div id="image-container">
+        <!-- The image will be dynamically inserted here -->
+    </div>
+
+    <div id="debug">
+        <!-- Debug information (Image ID) will be displayed here -->
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
